@@ -1,7 +1,7 @@
 # Javascript_DOM
 DOM 架構
 
-https://github.com/paulip114/Javascript_DOM/blob/master/domarchitecture_thumb2.png
+<img src="https://github.com/paulip114/Javascript_DOM/blob/master/domarchitecture_thumb2.png">
 
 透過 DOM 的操作，可以重構整個 HTML 檔案，可任意添加、移除、改變其項目，上方那張橘色的圖即為 DOM 之完整架構圖，最上方是 Core ( DOM Level 1) ，再下來是 XML 、 HTML (DOM Level 2)，甚至以下有許多的 Event (DOM Level 3)，最下方是使用者端的 Event ，主要分為以下三種：
 
@@ -11,7 +11,7 @@ https://github.com/paulip114/Javascript_DOM/blob/master/domarchitecture_thumb2.p
 
 由於 DOM 是由節點組成的，故一個 DOM 的物件 ( ex. html 檔) 可能可以看成以下架構，即所有的 Node 組成了一個檔案數，HTML 裡面的每個元素、屬性、內容等都代表著其中一個節點，並不斷延伸：
 
-https://github.com/paulip114/Javascript_DOM/blob/master/ct_htmltree_thumb3.gif
+<img src="https://github.com/paulip114/Javascript_DOM/blob/master/ct_htmltree_thumb3.gif">
 
 DOM 操作基本語法
 
