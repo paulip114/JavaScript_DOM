@@ -17,7 +17,7 @@ DOM 操作基本語法
 
 操作語法最常用以下幾項：
 
-(1) getElementById()
+(1) `getElementById()`
 
 用法為
 
@@ -25,68 +25,68 @@ DOM 操作基本語法
 
 例如
 
-var choose = document.getElementById(‘choose’);
+`var choose = document.getElementById(‘choose’);`
 
-可以取出 HTML 內容當中 <div id=”choose”> test </div> 當中的 test 字串
+可以取出 HTML 內容當中 `<div id=”choose”> test </div>` 當中的 `test` 字串
 ps. 此項目無法使用在 XML 檔案當中
 
-(2) getElementsByTagName()
+(2) `getElementsByTagName()`
 
 用法為
 
-document.getElementsByTagName("標籤名稱");
+`document.getElementsByTagName("標籤名稱");`
 
 例如
 
-document.getElementsByTagName("p");
+`document.getElementsByTagName("p");`
 
-將會回傳文件當中的所有 <p> 元素內之內容
-ps. 原本還有 getElementByNAme，但是在新版本的 DOM 中已被移除
+將會回傳文件當中的所有 `<p>` 元素內之內容
+ps. 原本還有 `getElementByNAme`，但是在新版本的 DOM 中已被移除
 
 使用 DOM 變數之內容
 
 如果要把之前的內容取出，則可使用
 
-var x=document.getElementsByTagName("p");
+`var x=document.getElementsByTagName("p");`
 
-會將 <p> 裡面的內容，丟進 x 變數當中
+會將 `<p>` 裡面的內容，丟進 x 變數當中
 
-如果有一個以上的 <p> 資料的話，則可以使用以下代碼 loop 取出資料
+如果有一個以上的 `<p>` 資料的話，則可以使用以下代碼 loop 取出資料
   
-var x=document.getElementsByTagName("p");for (var i=0;i<x.length;i++){   // do something with each paragraph}
+`var x=document.getElementsByTagName("p");for (var i=0;i<x.length;i++){   // do something with each paragraph}`
 
 如果只取出特定項目，例如第4個項目，則可使用以下代碼
 
-var y = x[3];
+`var y = x[3];`
 
 動態變更 HTML 的內容
 現在在 html 當中有一行為
 
-<div id=”content”> test </div>
+`<div id=”content”> test </div>`
 
 如果要利用 JavaScript 更改內容的值，可使用以下代碼
 
-var x = document.getElementById(“content”);
-x.innerHTML = “newContent”;
+`var x = document.getElementById(“content”);`
+`x.innerHTML = “newContent”;`
 
-如此一來，原本的 test 就會更改為新的內容，即 newContent
+如此一來，原本的 `test` 就會更改為新的內容，即 `newContent`
 
 設定 Tag 屬性
 
 我們有時候會需要針對 HTML 當中的 tag 新增一些屬性，可使用以下代碼
 
-document.getElementById(‘choose’).style.fontWeight = ‘bold’;
+`document.getElementById(‘choose’).style.fontWeight = ‘bold’;`
 
-上面那行的意思是說，針對 HTML 當中的 <div id=’choose’> test </div> 的 test ，新增粗體文字屬性
+上面那行的意思是說，針對 HTML 當中的 `<div id=’choose’> test </div>` 的 `test` ，新增粗體文字屬性
 
 一個簡單的範例
 
-var choose = document.getElementById(‘choose’);
+`var choose = document.getElementById(‘choose’);`
 
 0
 
 以上範例的意思就是，在網頁上面顯示一段話：「請按我」，【請按我觀看範例】
-透過 getElementById 取得 DOM 物件內容，並透過 getValue 連結 JavaScipt
+透過 `getElementById` 取得 DOM 物件內容，並透過 `getValue` 連結 JavaScipt
 使用 alert 將結果顯示，即可完成
 
 相關工具
