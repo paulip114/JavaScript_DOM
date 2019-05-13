@@ -27,7 +27,9 @@ document.getElementById("ID");
 
 例如
 
-`var choose = document.getElementById(‘choose’);`
+```javascript 
+var choose = document.getElementById(‘choose’);
+```
 
 可以取出 HTML 內容當中 `<div id=”choose”> test </div>` 當中的 `test` 字串
 ps. 此項目無法使用在 XML 檔案當中
@@ -36,11 +38,15 @@ ps. 此項目無法使用在 XML 檔案當中
 
 用法為
 
-`document.getElementsByTagName("標籤名稱");`
+```javascript 
+document.getElementsByTagName("標籤名稱");
+```
 
 例如
 
-`document.getElementsByTagName("p");`
+```javascript 
+document.getElementsByTagName("p");
+```
 
 將會回傳文件當中的所有 `<p>` 元素內之內容
 ps. 原本還有 `getElementByNAme`，但是在新版本的 DOM 中已被移除
@@ -49,17 +55,23 @@ ps. 原本還有 `getElementByNAme`，但是在新版本的 DOM 中已被移除
 
 如果要把之前的內容取出，則可使用
 
-`var x=document.getElementsByTagName("p");`
+```javascript 
+var x=document.getElementsByTagName("p");
+```
 
 會將 `<p>` 裡面的內容，丟進 x 變數當中
 
 如果有一個以上的 `<p>` 資料的話，則可以使用以下代碼 loop 取出資料
   
-`var x=document.getElementsByTagName("p");for (var i=0;i<x.length;i++){   // do something with each paragraph}`
+```javascript 
+var x=document.getElementsByTagName("p");for (var i=0;i<x.length;i++){   // do something with each paragraph}
+```
 
 如果只取出特定項目，例如第4個項目，則可使用以下代碼
 
-`var y = x[3];`
+```javascript 
+var y = x[3];
+```
 
 動態變更 HTML 的內容
 現在在 html 當中有一行為
@@ -68,8 +80,10 @@ ps. 原本還有 `getElementByNAme`，但是在新版本的 DOM 中已被移除
 
 如果要利用 JavaScript 更改內容的值，可使用以下代碼
 
-`var x = document.getElementById(“content”);`
-`x.innerHTML = “newContent”;`
+```javascript 
+var x = document.getElementById(“content”);
+x.innerHTML = “newContent”;
+```
 
 如此一來，原本的 `test` 就會更改為新的內容，即 `newContent`
 
@@ -77,13 +91,17 @@ ps. 原本還有 `getElementByNAme`，但是在新版本的 DOM 中已被移除
 
 我們有時候會需要針對 HTML 當中的 tag 新增一些屬性，可使用以下代碼
 
-`document.getElementById(‘choose’).style.fontWeight = ‘bold’;`
+```javascript 
+document.getElementById(‘choose’).style.fontWeight = ‘bold’;
+```
 
 上面那行的意思是說，針對 HTML 當中的 `<div id=’choose’> test </div>` 的 `test` ，新增粗體文字屬性
 
 一個簡單的範例
 
-`var choose = document.getElementById(‘choose’);`
+```javascript 
+var choose = document.getElementById(‘choose’);
+```
 
 0
 
