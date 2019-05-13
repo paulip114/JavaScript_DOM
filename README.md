@@ -21,7 +21,9 @@ DOM 操作基本語法
 
 用法為
 
-`document.getElementById("ID");`
+```javascript 
+document.getElementById("ID");
+```
 
 例如
 
